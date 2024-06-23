@@ -1,9 +1,8 @@
 package net.kxinmensch.citybuildsystem;
 
-import net.kxinmensch.citybuildsystem.commands.DayCMD;
-import net.kxinmensch.citybuildsystem.commands.GMCommand;
-import net.kxinmensch.citybuildsystem.commands.NightCMD;
-import net.kxinmensch.citybuildsystem.manager.ConfigManager;
+import net.kxinmensch.citybuildsystem.commands.Day;
+import net.kxinmensch.citybuildsystem.commands.GM;
+import net.kxinmensch.citybuildsystem.commands.Night;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CityBuildSystem extends JavaPlugin {
@@ -23,10 +22,10 @@ public final class CityBuildSystem extends JavaPlugin {
     }
 
     public void registerCommand() {
-        getCommand("gm").setExecutor(new GMCommand());
-        getCommand("night").setExecutor(new NightCMD());
-        getCommand("day").setExecutor(new DayCMD());
-        getCommand("fly").setExecutor(new DayCMD());
+        getCommand("gm").setExecutor(new GM());
+        getCommand("night").setExecutor(new Night());
+        getCommand("day").setExecutor(new Day());
+        getCommand("fly").setExecutor(new Day());
     }
 
     public static CityBuildSystem getInstance() {
