@@ -1,0 +1,4 @@
+name: citybuild-system
+version: '${project.version}'
+main: net.kxinmensch.citybuildsystem.Citybuild_system
+api-version: '1.20'
