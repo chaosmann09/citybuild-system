@@ -1,4 +1,11 @@
-name: citybuild-system
-version: '${project.version}'
-main: net.kxinmensch.citybuildsystem.Citybuild_system
-api-version: '1.20'
+name: CityBuildSystem
+author: Keinprogrammierer
+main: net.kxinmensch.citybuildsystem.CityBuildSystem
+api-version: 1.20
+version: 1.0
+
+commands:
+  gm:
+  night:
+  day:
+  fly:
