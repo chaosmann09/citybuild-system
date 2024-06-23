@@ -14,6 +14,7 @@ public final class CityBuildSystem extends JavaPlugin {
         instance = this;
 
         registerCommand();
+        registerListener();
     }
 
     @Override
@@ -26,6 +27,10 @@ public final class CityBuildSystem extends JavaPlugin {
         getCommand("night").setExecutor(new Night());
         getCommand("day").setExecutor(new Day());
         getCommand("fly").setExecutor(new Day());
+    }
+
+    public void registerListener() {
+
     }
 
     public static CityBuildSystem getInstance() {
